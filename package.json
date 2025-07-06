@@ -1,0 +1,19 @@
+{
+  "name": "ts-playground",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "format": "biome check --write .",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.0.6",
+    "@types/node": "^24.0.10",
+    "nodemon": "^3.1.10",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}
