@@ -1,7 +1,6 @@
 {
   "name": "ts-playground",
   "version": "1.0.0",
-  "type": "module",
   "scripts": {
     "dev": "tsx src/index.ts",
     "build": "tsc",
@@ -15,5 +14,8 @@
     "nodemon": "^3.1.10",
     "tsx": "^4.20.3",
     "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "date-fns-tz": "3.2.0"
   }
 }
