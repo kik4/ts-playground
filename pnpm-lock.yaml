@@ -8,9 +8,12 @@ importers:
 
   .:
     dependencies:
+      date-fns:
+        specifier: ^2.30.0
+        version: 2.30.0
       date-fns-tz:
-        specifier: 3.2.0
-        version: 3.2.0(date-fns@2.16.1)
+        specifier: 1.0.10
+        version: 1.0.10(date-fns@2.30.0)
     devDependencies:
       '@biomejs/biome':
         specifier: ^2.0.6
@@ -29,6 +32,10 @@ importers:
         version: 5.8.3
 
 packages:
+
+  '@babel/runtime@7.27.6':
+    resolution: {integrity: sha512-vbavdySgbTTrmFE+EsiqUTzlOr5bzlnJtUv9PynGCAKvfQqjIXbvFdumPM/GxMDfyuGMJaJAU6TO4zc1Jf1i8Q==}
+    engines: {node: '>=6.9.0'}
 
   '@biomejs/biome@2.0.6':
     resolution: {integrity: sha512-RRP+9cdh5qwe2t0gORwXaa27oTOiQRQvrFf49x2PA1tnpsyU7FIHX4ZOFMtBC4QNtyWsN7Dqkf5EDbg4X+9iqA==}
@@ -261,13 +268,13 @@ packages:
   concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
 
-  date-fns-tz@3.2.0:
-    resolution: {integrity: sha512-sg8HqoTEulcbbbVXeg84u5UnlsQa8GS5QXMqjjYIhS4abEVVKIUwe0/l/UhrZdKaL/W5eWZNlbTeEIiOXTcsBQ==}
+  date-fns-tz@1.0.10:
+    resolution: {integrity: sha512-cHQAz0/9uDABaUNDM80Mj1FL4ODlxs1xEY4b0DQuAooO2UdNKvDkNbV8ogLnxLbv02Ru1HXFcot0pVvDRBgptg==}
     peerDependencies:
-      date-fns: ^3.0.0 || ^4.0.0
+      date-fns: '>=2.0.0-alpha.13'
 
-  date-fns@2.16.1:
-    resolution: {integrity: sha512-sAJVKx/FqrLYHAQeN7VpJrPhagZc9R4ImZIWYRFZaaohR3KzmuK88touwsSwSVT8Qcbd4zoDsnGfX4GFB4imyQ==}
+  date-fns@2.30.0:
+    resolution: {integrity: sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==}
     engines: {node: '>=0.11'}
 
   debug@4.4.1:
@@ -390,6 +397,8 @@ packages:
     resolution: {integrity: sha512-9UJ2xGDvQ43tYyVMpuHlsgApydB8ZKfVYTsLDhXkFL/6gfkp+U8xTGdh8pMJv1SpZna0zxG1DwsKZsreLbXBxw==}
 
 snapshots:
+
+  '@babel/runtime@7.27.6': {}
 
   '@biomejs/biome@2.0.6':
     optionalDependencies:
@@ -537,11 +546,13 @@ snapshots:
 
   concat-map@0.0.1: {}
 
-  date-fns-tz@3.2.0(date-fns@2.16.1):
+  date-fns-tz@1.0.10(date-fns@2.30.0):
     dependencies:
-      date-fns: 2.16.1
+      date-fns: 2.30.0
 
-  date-fns@2.16.1: {}
+  date-fns@2.30.0:
+    dependencies:
+      '@babel/runtime': 7.27.6
 
   debug@4.4.1(supports-color@5.5.0):
     dependencies:

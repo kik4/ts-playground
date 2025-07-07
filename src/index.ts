@@ -1,17 +1,17 @@
-import { utcToZonedTime } from "date-fns-tz";
+import { zonedTimeToUtc } from "date-fns-tz";
 
 console.log("🚀 TypeScript Playground");
 
 process.env.TZ = "UTC";
 
-const now = new Date("2025-07-07T00:00+09:00");
-
-const zonedTime = utcToZonedTime(now, "Asia/Tokyo");
+const datetime = "2025-07-07T00:00Z";
+const now = new Date(datetime);
 
 console.log({
   offset: now.getTimezoneOffset(),
   now,
-  zonedTime,
+  zonedTime: zonedTimeToUtc(now, "Asia/Tokyo"),
+  zonedTime2: zonedTimeToUtc(datetime, "Asia/Tokyo"),
 });
 
 console.log("🚀 Done!");
